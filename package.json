@@ -1,0 +1,15 @@
+{
+  "name": "api-dianophe",
+  "version": "1.0.0",
+  "description": "Unofficial API from dianophe.fr",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yann LEVEILLE-MENEZ @ Dianophe",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
