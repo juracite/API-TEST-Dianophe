@@ -5,7 +5,7 @@ let data = require("../responses/users.json");
  * @param  {Object} app
  */
 function initUsers(app) {
-  app.get("/users", (req, res) => {
+  app.get("/test/users", (req, res) => {
     res.setHeader("Content-Type", "application/json");
     return res.send(JSON.stringify(data, null, 4));
   });
