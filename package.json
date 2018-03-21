@@ -7,12 +7,28 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "nm": "nodemon -e js,html,json,css server.js",
     "start": "node ./bin/www",
-    "debug": "nodemon --inspect"
+    "debug": "nodemon --inspect",
+    "serv-doc": "docsify serve docs --port 1400",
+    "deploy": "now -p"
+  },
+  "files": ["docs"],
+  "docsify": {
+    "config": {
+      "basePath": "https://docsify.js.org/",
+      "loadSidebar": true,
+      "loadNavbar": true,
+      "coverpage": true,
+      "name": "docsify"
+    }
   },
   "author": "Yann LEVEILLE-MENEZ @ Dianophe",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.2.1",
+    "now": "^10.2.1"
   }
 }
