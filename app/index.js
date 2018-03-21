@@ -1,6 +1,9 @@
 let express = require("express");
 let app = express();
 let bodyParser = require("body-parser");
+let cors = require("cors");
+
+app.use(cors());
 
 app.set("views", "views");
 app.set("view engine", "html");

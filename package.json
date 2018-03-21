@@ -11,7 +11,9 @@
     "serv-doc": "docsify serve docs --port 1400",
     "deploy": "now -p"
   },
-  "files": ["docs"],
+  "files": [
+    "docs"
+  ],
   "docsify": {
     "config": {
       "basePath": "https://docsify.js.org/",
@@ -28,6 +30,7 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
+    "cors": "^2.8.4",
     "docsify-cli": "^4.2.1",
     "now": "^10.2.1"
   }
