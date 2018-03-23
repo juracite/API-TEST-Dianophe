@@ -16,23 +16,23 @@ function initUsers(app) {
     let id = req.params.id;
 
     if (reg.test(id)) {
-      data.forEach(user => {
-        if (user.id == id) {
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].id == id) {
           return res.send(
             JSON.stringify(
               {
                 id: id,
-                username: user.username,
-                nbr_tickets: user.nbr_tickets,
-                account_type: user.account_type,
-                img_url: user.img_url
+                username: data[i].username,
+                nbr_tickets: data[i].nbr_tickets,
+                account_type: data[i].account_type,
+                img_url: data[i].img_url
               },
               null,
               4
             )
           );
         }
-      });
+      }
     } else {
       return res.send(
         JSON.stringify(
